@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="css/home.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="jquery.bpopup.min.js"></script>
+
     <link rel="stylesheet" href="css/success.css">
     <link rel="stylesheet" href="css/product.css">
     <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/search.css">
+    
 </head>
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
@@ -31,8 +34,12 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+<script>
+$( document ).ready(function() {
+    $('#popup_this').bPopup();
+});
+</script>
 <body>
-
     <div id="header">
         <div class="container">
             <div class="row">
@@ -104,6 +111,8 @@ s0.parentNode.insertBefore(s1,s0);
             </div>
         </div>
     </div>
+    <!-- top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">&#8965</button>
     <div id="footer-top">
         <div class="container">
             <div class="row">
@@ -125,6 +134,42 @@ s0.parentNode.insertBefore(s1,s0);
             </div>
         </div>
     </div>
+<!-- pop up advertisement div -->
+    <div id="popup_this">
+        <span id="close_x" onclick="close_popup()" class="button b-close">
+            <span>X</span>
+        </span>
+        <img id="banner-popup" src="images/slide-3.png" alt="Vietpro Academy">
+    </div>
 </body>
+<!-- script cho top button -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        //Get the button:
+        mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {scrollFunction()};
+
+        function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            mybutton.style.display = "block";
+        } else {
+            mybutton.style.display = "none";
+        }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
+<script>
+    function close_popup(){
+        document.getElementById('popup_this').style.display= "none";
+    } 
+</script>
 
 </html>

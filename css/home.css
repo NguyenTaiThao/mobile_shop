@@ -42,7 +42,9 @@ body{
 	text-align:center;}		
 #menu{
 	overflow:hidden;
-	background:#EB1F27;}
+	background:#EB1F27;
+	width: 100%;
+	}
 #menu ul{
 	margin:0;}	
 .menu-item{
@@ -148,4 +150,44 @@ body{
 		display:block;}
 	#header > button{
 		display:none;}
+}
+/* css top button */
+#myBtn {
+	display: none; /*Hidden by default*/ 
+	position: fixed; /* Fixed/sticky position */
+	bottom: 100px; /* Place the button at the bottom of the page */
+	right: 20px; /* Place the button 30px from the right */
+	z-index: 99; /* Make sure it does not overlap */
+	border: none; /* Remove borders */
+	outline: none; /* Remove outline */
+	background-color: red; /* Set a background color */
+	color: white; /* Text color */
+	cursor: pointer; /* Add a mouse pointer on hover */
+	padding: 1px 13.5px; /* Some padding */
+	border-radius: 50%; /* Rounded corners */
+	font-size: 40px; /* Increase font size */
+	opacity: 0.5;
+  }
+  
+  #myBtn:hover {
+	opacity: 1;
+  }
+/* css pop up advertisement */
+#popup_this {
+    top: 25%;
+    left: 25%;
+    text-align:center;
+    position: fixed;
+    background: #fff;
+	z-index: 100;
+	border: rgb(255, 255, 255) 3px solid;
+}
+.b-close {
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+    color: #fff;
+    background: #ff0000;
+    padding: 5px 10px;
 }

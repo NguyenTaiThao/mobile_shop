@@ -92,10 +92,10 @@ if(isset($_POST['sbm'])){
                                 <div class="form-group">
                                     <label>Ảnh sản phẩm</label>
                                     
-                                    <input required name="prd_image" type="file">
+                                    <input required name="prd_image" type="file" onchange="loadFile(event)">
                                     <br>
                                     <div>
-                                        <img src="img/download.jpeg">
+                                        <img id="output_img" src="img/download.jpeg">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -141,3 +141,9 @@ if(isset($_POST['sbm'])){
             </div><!-- /.row -->
 		
 	</div>	<!--/.main-->	
+<script>
+    var loadFile = function(event){
+        var output_img  = document.getElementById("output_img");
+        output_img.src = URL.createObjectURL(event.target.files[0]);
+    }
+</script>
