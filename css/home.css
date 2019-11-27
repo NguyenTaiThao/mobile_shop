@@ -191,3 +191,9 @@ body{
     background: #ff0000;
     padding: 5px 10px;
 }
+.deactive{
+	display: none;
+}
+#deactive{
+	display: none;
+}

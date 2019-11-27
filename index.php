@@ -135,8 +135,8 @@ $( document ).ready(function() {
         </div>
     </div>
 <!-- pop up advertisement div -->
-    <div id="popup_this">
-        <span id="close_x" onclick="close_popup()" class="button b-close">
+    <div id="<?php if(!isset($_SESSION['deactive'])){echo 'popup_this';} else {echo 'deactive';}?>">
+        <span id="close_x" onclick="close_popup()" class="<?php if(!isset($_SESSION['deactive'])){echo 'button b-close';} else {echo 'deactive';}?>">
             <span>X</span>
         </span>
         <img id="banner-popup" src="images/slide-3.png" alt="Vietpro Academy">
@@ -171,5 +171,7 @@ $( document ).ready(function() {
         document.getElementById('popup_this').style.display= "none";
     } 
 </script>
-
+<?php 
+    $_SESSION['deactive'] = 1;
+?>
 </html>
