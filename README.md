@@ -1,5 +1,5 @@
 # mobile_shop
-1. Truy cập https://bkmobileshop.000webhotapp.com/ để chạy project trên môi trường mạng
+1. Truy cập https://bkmobileshop.000webhostapp.com/ để chạy project trên môi trường mạng
 
 2. Hướng dẫn thao tác với phần quản lý dành cho admin website:
 
