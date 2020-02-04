@@ -11,9 +11,9 @@
   
                         password: 123456
                         
-  - Login với tài khoản admin lower level: account: 
+  - Login với tài khoản admin lower level: 
   
-                        nguyenvana@gmail.com
+                        account:nguyenvana@gmail.com
   
                         password: 123456
   
